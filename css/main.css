@@ -100,9 +100,11 @@ body {
 
 .nav__login {
     display: flex;
+    align-items: center;
     column-gap: 25px;
-   font-style: 15px;
-   font-weight: 500; 
+
+    font-size: 15px;
+    font-weight: 500; 
 }
 
 /* Logo */
@@ -131,7 +133,7 @@ body {
 }
 
 .btn:hover {
-    color: #f6f4a0;
+    color: #fefdd6;
     transition: color 0.2s ease-in;
 }
 
