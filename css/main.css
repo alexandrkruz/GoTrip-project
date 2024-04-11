@@ -34,6 +34,7 @@ body {
 /* Header */
 
 .header {
+    overflow: hidden;
     position: relative;
     min-height: 940px;
     padding-top: 44px;
@@ -59,6 +60,13 @@ body {
 
 .header__top {
     margin-bottom: 86px;
+}
+.header__row {
+    display: flex;
+}
+
+.header__content {
+    max-width: 592px;
 }
 
 /* Nav */
@@ -141,3 +149,51 @@ body {
     position: relative;
     top: 1px;
 }
+
+/* Header content */
+
+.header__badge {
+    margin-bottom: 7px;
+    display: inline-block;
+    padding: 11px 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+}
+
+.header__title {
+    margin-bottom: 30px;
+    font-size: 55px;
+
+}
+
+.header__text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__btn {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 27px 48px;
+    display: inline-block;
+    border-radius: 27px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+}
+
+.header__btn:hover {
+    color: #fefdd6;
+    transition: color 0.2s ease-in;
+}
+
+.header__btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
