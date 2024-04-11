@@ -67,6 +67,20 @@ body {
 
 .header__content {
     max-width: 592px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__img {
+    position: relative;
+    flex-grow: 1;
+}
+
+.header__img img {
+    top: -55px;
+    right: 65px;
+    max-width: unset;
+    position: absolute;
 }
 
 /* Nav */
@@ -179,7 +193,7 @@ body {
 .header__btn {
     font-size: 25px;
     font-weight: 600;
-    padding: 27px 48px;
+    padding: 27px 55px;
     display: inline-block;
     border-radius: 27px;
     background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
