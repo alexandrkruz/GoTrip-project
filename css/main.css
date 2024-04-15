@@ -320,4 +320,78 @@ body {
     justify-content: flex-end;
 }
 
+/* Customers */
+
+.customers {
+    padding: 100px 0 133px;
+}
+
+.customers__row {
+    display: flex;
+    column-gap: 68px;
+}
+
+.customers__img {
+    max-width: 478px;
+    border-radius: 60px;
+}
+
+.customers__img img {
+    border-radius: 60px;
+}
+
+.customers__content {
+    
+}
+
+.customers__title {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+/* Review */
+
+.review {
+    max-width: 490px;
+}
+
+.review__client {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    column-gap: 33px;
+}
+
+.review__client-avatar {
+    overflow: hidden;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background-color: #FF794E;
+}
+
+.review__client-desk {
+}
+
+.review__client-desk-name {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.review__client-desk-country {
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+.review__text {
+    margin-bottom: 30px;
+    color: var(--secondary);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.review__raiting {
+}
 
