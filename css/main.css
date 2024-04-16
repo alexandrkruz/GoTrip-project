@@ -85,6 +85,16 @@ body {
     pointer-events: none;
 }
 
+.header__img::after {
+    content: "";
+    position: absolute;
+    width: 830px;
+    height: 622px;
+    background-image: url(./../img/header/header-elements.svg);
+    top: -7px;
+    right: -43px;
+}
+
 /* Nav */
 
 .nav {
