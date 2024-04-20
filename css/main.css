@@ -143,6 +143,10 @@ body {
     font-weight: 500; 
 }
 
+.nav__toggle {
+    display: none;
+}
+
 /* Logo */
 
 .logo {
@@ -487,4 +491,351 @@ body {
     padding: 34px 86px;
     border-radius: 35px;
 }
+ 
+/* Menu Icon */
+.menu-icon-wrapper {
+    /*   background: red; */
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     
+    .menu-icon {
+      position: relative;
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+    }
+    
+    .menu-icon::before {
+      position: absolute;
+      left: 0;
+      top: -10px;
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+    }
+    
+    .menu-icon::after {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      content: '';
+      width: 30px;
+      height: 5px;
+      background-color: #fff;
+      transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+    }
+    
+    .menu-icon.menu-icon-active {
+      background-color: transparent;
+    }
+    
+    .menu-icon.menu-icon-active::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+    
+    .menu-icon.menu-icon-active::after {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+/* Media */
+
+@media (max-width: 1269px) {
+    .container-right {
+        padding-left: 15px;
+    }
+    
+    .container-left {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .destinations__slider {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav__list {
+        display: none;
+    }
+
+    .nav__login {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .no-scroll {
+        overflow-y: hidden;
+    }
+
+    .nav--mobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        align-items: center;
+        background: linear-gradient(209deg, #428E5F -17.38%, #112120 78.4%), #204434;
+        
+    }
+
+    .nav--mobile .logo {
+        font-size: 34px;
+    }
+
+    .nav--mobile .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        font-size: 22px;
+    }
+
+    .nav--mobile .nav__list a.active::after,
+    .nav--mobile .nav__list a:hover::after {
+        display: none;
+    }
+
+    .nav--mobile .nav__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        font-size: 22px;
+    }
+
+    .nav--mobile .nav__toggle {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+
+    .header__img img {
+        right: -100px;
+    }
+
+    .header__img::after {
+        right: -300px;
+    }
+
+    .slider {
+        height: 304px;
+    }
+
+    .destinations__slider {
+        width: 700px;
+    }
+
+    .slider .slider__item {
+        margin-top: 18px;
+        width: 223px;
+        height: 268px;
+    }
+
+    .slider .center .slider__item {
+        margin-top: 0;
+        width: 253px;
+        height: 304px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container-right {
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 20px;
+        min-height: unset;
+    }
+
+    .header__top {
+        margin-bottom: 40px;
+    }
+
+    .header__row {
+        flex-direction: column;
+    }
+
+    .header__img img {
+        position: static;
+        width: 60%;
+        height: auto;
+    }
+
+    .header__img::after {
+        top: 50px;
+        right: 0px;
+    }
+
+    .header__title {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .header__text {
+        margin-bottom: 40px;
+        font-size: 20px;
+        max-width: 400px;
+    }
+
+    .header__badge {
+        padding: 8px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .btn--header {
+        font-size: 20px;
+        padding: 20px 30px;
+        border-radius: 18px;
+    }
+
+    .destinations {
+        padding: 40px 0 50px;
+    }
+
+    .destinations__row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .destinations__title {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .destinations__title span {
+        font-size: 20px;
+        display: block;
+    }
+
+    .destinations__text {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 20px 35px;
+        border-radius: 27px;
+    }
+
+    .slider {
+        height: auto;
+    }
+
+    .destinations__slider {
+        width: 100%;
+    }
+
+    .slider__btn--prew {
+        left: -15px;
+    }
+
+    .slider__btn--next {
+        right: -15px;
+    }
+    
+    /* Customers */
+    .customers {
+        padding: 50px 0 60px;
+    }
+
+    .customers__row {
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+
+    .customers__title {
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+
+    .review__client {
+        column-gap: 30px;
+        margin-bottom: 20px;
+    }
+
+    .review__client-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .review__client-desk-name {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+
+    .review__client-desk-country {
+        font-size: 18px;
+    }
+
+    .review__text {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .review__raiting {
+        max-width: 200px;
+    }
+
+    .customers__img img {
+        max-width: 300px;
+        border-radius: 40px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 50px 0;
+    }
+
+    .cta__title {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .cta__text {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .cta__plate {
+        min-height: 380px;
+        padding: 20px 15px;
+        border-radius: 40px;
+    }
+
+    /* Subscribe */
+    
+}
+
+@media (max-width: 460px) {
+    .nav--mobile .nav__list {
+        row-gap: 20px;
+    }
+
+    .nav--mobile .nav__login {
+        row-gap: 20px;
+    }
+}
