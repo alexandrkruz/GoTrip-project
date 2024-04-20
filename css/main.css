@@ -75,6 +75,7 @@ body {
 .header__img {
     position: relative;
     flex-grow: 1;
+    pointer-events: none;
 }
 
 .header__img img {
@@ -82,7 +83,7 @@ body {
     right: 65px;
     max-width: unset;
     position: absolute;
-    pointer-events: none;
+    
 }
 
 .header__img::after {
@@ -93,6 +94,7 @@ body {
     background-image: url(./../img/header/header-elements.svg);
     top: -7px;
     right: -43px;
+    pointer-events: none;
 }
 
 /* Nav */
